@@ -52,23 +52,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                   fontWeight: FontWeight.bold),
                             ),
                           ),
-                          Padding(
-                            padding: EdgeInsets.only(left: 160, top: 30),
-                            child: Text(
-                              'Sign Out',
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 15),
-                            ),
-                          ),
-                          Padding(
-                              padding: EdgeInsets.only(left: 15, top: 30),
-                              child: Icon(
-                                Icons.exit_to_app,
-                                color: Colors.white,
-                                size: 20,
-                              ))
                         ],
                       ),
                       SizedBox(
@@ -558,7 +541,34 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Text(
                   '65% Profile Completed',
                   style: TextStyle(color: Colors.white, fontSize: 12),
-                ))
+                )),
+            Align(
+              alignment: Alignment.topRight,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(
+                      top: 20,
+                    ),
+                    child: Text(
+                      'Sign Out',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 15),
+                    ),
+                  ),
+                  Padding(
+                      padding: EdgeInsets.only(left: 15, top: 23),
+                      child: Icon(
+                        Icons.exit_to_app,
+                        color: Colors.white,
+                        size: 20,
+                      ))
+                ],
+              ),
+            )
           ],
         ),
         bottomNavigationBar: BottomNavigationBar(
